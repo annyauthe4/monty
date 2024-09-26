@@ -5,8 +5,8 @@
  */
 void usage_error(void)
 {
-    fprintf(stderr, "USAGE: monty file\n");
-    exit(EXIT_FAILURE);
+	fprintf(stderr, "USAGE: monty file\n");
+	exit(EXIT_FAILURE);
 }
 
 /**
@@ -15,8 +15,8 @@ void usage_error(void)
  */
 void file_error(char *filename)
 {
-    fprintf(stderr, "Error: Can't open file %s\n", filename);
-    exit(EXIT_FAILURE);
+	fprintf(stderr, "Error: Can't open file %s\n", filename);
+	exit(EXIT_FAILURE);
 }
 
 /**
@@ -24,8 +24,8 @@ void file_error(char *filename)
  */
 void malloc_error(void)
 {
-    fprintf(stderr, "Error: malloc failed\n");
-    exit(EXIT_FAILURE);
+	fprintf(stderr, "Error: malloc failed\n");
+	exit(EXIT_FAILURE);
 }
 
 /**
@@ -35,6 +35,6 @@ void malloc_error(void)
  */
 void unknown_instruction_error(char *opcode, unsigned int line_number)
 {
-    fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
-    exit(EXIT_FAILURE);
+	fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
+	exit(EXIT_FAILURE);
 }
