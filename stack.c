@@ -32,7 +32,7 @@ void push(stack_t **stack, unsigned int line_number, char *arg)
 	int n;
 
 	/* Convert the argument to an integer and validate */
-	if (arg == NULL || !is_number(arg))
+	if (arg == NULL || !is_number(arg) || arg[1] == "")
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);

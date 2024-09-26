@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #define EXIT_FAILURE 1
 
@@ -43,6 +44,6 @@ void malloc_error(void);
 void unknown_instruction_error(char *opcode, unsigned int line_number);
 void free_stack(stack_t *stack);
 
-void push(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number, char *arg);
 void pall(stack_t **stack, unsigned int line_number);
 #endif
